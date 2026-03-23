@@ -745,7 +745,7 @@ function friendlyAuthError(code) {
     'auth/too-many-requests':   'Too many attempts. Please wait a moment.',
     'auth/invalid-credential':  'Incorrect email or password.',
   };
-  return map[code] || 'Something went wrong. Please try again.';
+  return map[code] || `Error: ${code} — please screenshot this and report it.`;
 }
 
 async function doLogin() {
